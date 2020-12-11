@@ -407,27 +407,39 @@ footer p{
 .social-media{
     display: flex;
 }
-.social-media .border{
-   position: relative;
+
+.social-wrapper{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.social-wrapper:hover .social-wrapper-border{
+    transform: rotate(360deg);  
+}
+.social-wrapper-border{
+    position: relative;
     background-color: transparent;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    margin-right: 10px;
     margin-bottom: 10px;
     border: 2px dashed deeppink;
     transition: transform 1s ease-in;
 }
-.social-media .border:hover{
+.social-wrapper-border:hover{
     transform: rotate(360deg);
 }
-.social-media .border a i{
-    position: absolute;
+.social-icon{
   color: deeppink;
 font-size: 20px;
-left: 10px;
-line-height: 40px;
-
+}
+.social-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 .notification-box{
     position: relative;
@@ -503,6 +515,9 @@ fieldset{
     }
 }
 @media (max-width: 360px) and (max-width: 320px){
+    .header ul{
+        float:none;
+    }
     .swiper-container{
         height: 20rem;
     }
@@ -535,4 +550,20 @@ height: 20rem;
     border: 2px solid #FF1654;
     width: 95%;
 }
+}
+@media (max-width: 375px){
+    .work-button .buttons {
+        width: 80px;
+    }
+    .work-items img {
+        width: 80%;
+        height: 10rem;
+    }
+    .contact input, label, textarea {
+        width: 90%;
+    }
+    .contact input:hover, textarea:hover, .contact button:hover {
+        border: 2px solid #FF1654;
+        width: 95%;
+    }
 }
