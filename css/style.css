@@ -552,6 +552,9 @@ height: 20rem;
 }
 }
 @media (max-width: 375px){
+     .header ul{
+        float:none;
+    }
     .work-button .buttons {
         width: 80px;
     }
