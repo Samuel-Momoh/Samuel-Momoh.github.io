@@ -38,6 +38,7 @@ color: #FF1654;
 }
 .header ul{
     display: inline-flex;
+    float:right;
     line-height: 80px;
     margin-right: 10px;
     margin-bottom: 0px;
