@@ -550,6 +550,13 @@ height: 20rem;
     border: 2px solid #FF1654;
     width: 95%;
 }
+.title{
+    font-size: 13px
+}
+.about-details{
+    font-size: 13px;
+width: 16rem;
+}
 }
 @media (max-width: 375px){
      .header ul{
