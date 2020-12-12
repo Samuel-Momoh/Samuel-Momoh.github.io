@@ -124,7 +124,7 @@ if(reg.test(mail)){
   }else{
    var dataString = 'name1='+name+'&email1='+mail+'&subject1='+subject+'&message1='+message;
    $.ajax({
-      url:'https://musixcloud.com/porfolio/mail.php',
+      url:'http://momoh.heliohost.org/mail.php',
       type:'POST',
       data:dataString,
       cache:false,
