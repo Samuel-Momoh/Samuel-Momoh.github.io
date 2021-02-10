@@ -4,8 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
-    user-select: none;
-    --webkit-user-select: none;
+    
 
 }
 body{
@@ -174,7 +173,7 @@ font-weight: bold;
 }
 .grid-item img{
     width: 30rem;
-    height: 20rem;
+    height: auto;
 }
 .grid-item h1{
     margin-bottom: 5px;
@@ -276,6 +275,7 @@ font-size: 15px;
     caret-color: blue;
     outline: none;
 }
+
 .contact input,label,textarea{
     width: 60%;
 }
@@ -294,45 +294,9 @@ font-size: 15px;
     transition: width 0.3s ease-in;
     background: #ff1654;
     color: #fff;
-    /* animation: glowLeft 5s infinite; */
+    cursor: pointer;
 }
-/* @keyframes glowLeft{
-    10% {
-        background: linear-gradient(to right ,#fff 5%,#FF1654 50%,#FF1654 45%);
-    }
-    20% {
-        background: linear-gradient(to right ,#FF1654 10%,#fff 20%,#FF1654 70%);
-    }
-    30% {
-        background: linear-gradient(to right ,#FF1654 20%,#fff 30%,#FF1654 50%);
-    }
-    40% {
-        background: linear-gradient(to right ,#FF1654 30%,#fff 40%,#FF1654 30%);
-    }
-    50% {
-        background: linear-gradient(to right ,#FF1654 50%,#fff 10%,#FF1654 40%);
-    }
-    60% {
-        background: linear-gradient(to right ,#FF1654 60%,#fff 10%,#FF1654 30%);
-    }
-    70% {
-        background: linear-gradient(to right ,#FF1654 70%,#fff 10%,#FF1654 20%);
-    }
-    80% {
-        background: linear-gradient(to right ,#FF1654 80%,#fff 10%,#FF1654 0%);
-    }
-    90% {
-        background: linear-gradient(to right ,#FF1654 70%,#fff 10%,#FF1654 20%);
-    }
-    100% {
-        background: linear-gradient(to right ,#FF1654 70%,#fff 10%,#FF1654 20%);
-    }
-} */
-/* .contact button:hover{
-    background-color: #FF1654;
-    width: 25%;
-    color: #fff;
-} */
+
 .contact span{
    color: red;
    font-style: italic;
@@ -508,7 +472,9 @@ fieldset{
     width: 100%;
     height: 20rem;
         }
-    
+       .grid-item p{
+width: 20rem;
+    }
 }
 @media (min-width: 600px){
     .header span i{
@@ -551,18 +517,11 @@ height: 20rem;
     border: 2px solid #FF1654;
     width: 95%;
 }
-.title{
-    font-size: 13px
-}
-.about-details{
-    font-size: 13px;
-width: 16rem;
-}
+   .grid-item p{
+width: 20rem;
+    }
 }
 @media (max-width: 375px){
-     .header ul{
-        float:none;
-    }
     .work-button .buttons {
         width: 80px;
     }
@@ -576,5 +535,8 @@ width: 16rem;
     .contact input:hover, textarea:hover, .contact button:hover {
         border: 2px solid #FF1654;
         width: 95%;
+    }
+    .grid-item p{
+width: 18rem;
     }
 }

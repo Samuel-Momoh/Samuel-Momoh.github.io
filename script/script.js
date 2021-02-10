@@ -119,23 +119,20 @@ if(reg.test(mail)){
 }
   if(name=='' ||mail==''||subject==''||message ==''|| mailError ==false){
    swal("Error", "Please fill input field correctly", "error", {
-      button: "Exist",
+      button: "Close",
     });
   }else{
    var dataString = 'name1='+name+'&email1='+mail+'&subject1='+subject+'&message1='+message;
    $.ajax({
-      url:'http://momoh.heliohost.org/mail.php',
+      url:'mail.php',
       type:'POST',
       data:dataString,
       cache:false,
       success: function(response){
          swal(response, "Thank you for reaching out!", "success", {
-            button: "Exist",
+            button: "Close",
           });
-         $('#name').val('');
-         $('#mail').val('');
-         $('#sub').val('');
-         $('#message').val('');
+         $('#myContact')[0].reset();
       }
    });
   
@@ -160,3 +157,14 @@ var swiper = new Swiper('.swiper-container', {
      prevEl: '.swiper-button-prev',
    },
  });
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    origin: 'left',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`#web-items img`, {
+    interval: 200
+})
