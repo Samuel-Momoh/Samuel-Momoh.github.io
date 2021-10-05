@@ -85,7 +85,7 @@ const css = document.querySelector('#css')
 const javascript = document.querySelector('#javascript')
 
 var t1 = new TimelineLite()
-t1.fromTo(python,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
+t1.fromTo(python,0.7, {width: "0%"},{width: "calc(80% - 4px)", ease: Power4.easeOut})
    .fromTo(php,0.7, {width: "0%"},{width: "calc(80% - 4px)", ease: Power4.easeOut})
     .fromTo(c,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
     .fromTo(sql ,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
