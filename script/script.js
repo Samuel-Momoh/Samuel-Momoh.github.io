@@ -85,9 +85,9 @@ const css = document.querySelector('#css')
 const javascript = document.querySelector('#javascript')
 
 var t1 = new TimelineLite()
-t1.fromTo(python,0.7, {width: "0%"},{width: "calc(100% - 4px)", ease: Power4.easeOut})
-   .fromTo(php,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
-    .fromTo(c,0.7, {width: "0%"},{width: "calc(70% - 4px)", ease: Power4.easeOut})
+t1.fromTo(python,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
+   .fromTo(php,0.7, {width: "0%"},{width: "calc(80% - 4px)", ease: Power4.easeOut})
+    .fromTo(c,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
     .fromTo(sql ,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
     .fromTo(html ,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
     .fromTo(css ,0.7, {width: "0%"},{width: "calc(90% - 4px)", ease: Power4.easeOut})
@@ -124,7 +124,7 @@ if(reg.test(mail)){
   }else{
    var dataString = 'name1='+name+'&email1='+mail+'&subject1='+subject+'&message1='+message;
    $.ajax({
-      url:'mail.php',
+      url:'https://momohsamuel.000webhostapp.com/mail.php',
       type:'POST',
       data:dataString,
       cache:false,
